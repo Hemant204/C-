@@ -16,7 +16,7 @@ int main()
 	int x,y,i,t;
 	cin>>t;
 	
-	for(i=0;i<t;i++)
+	while(t--)
 	{
 	    cin>>x>>y; 	    
 	    while(x!=y )
