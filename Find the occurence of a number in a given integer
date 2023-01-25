@@ -1,0 +1,27 @@
+/*This will check for every digit in the number and if any digit is 7 it will set the flag to 1 and break the loop, 
+and then the program will print "YES" if the number contains 7 or "NO" if it doesn't.*\
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+        int n;
+        cin>>n;
+        
+        int cnt=1;
+	    string s= to_string(n);
+	    for(int i=0;i<s.length();i++){
+	        if(s[i]=='7'){
+	            cout<<"YES"<<endl;
+	            cnt=0;
+	            break;
+	        }
+	    }
+	    if(cnt){
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
